@@ -2,20 +2,6 @@
 
 A complete Express.js backend service for processing employee status information using Sequelize (MySQL ORM) and Redis caching.
 
-## 📋 Table of Contents
-
-- [Features](#features)
-- [Architecture](#architecture)
-- [Prerequisites](#prerequisites)
-- [Installation](#installation)
-- [Configuration](#configuration)
-- [Running the Application](#running-the-application)
-- [API Documentation](#api-documentation)
-- [Testing](#testing)
-- [Docker Setup](#docker-setup)
-- [Project Structure](#project-structure)
-- [Postman Testing](#postman-testing)
-
 ## ✨ Features
 
 - ✅ RESTful API with Express.js
@@ -61,7 +47,29 @@ A complete Express.js backend service for processing employee status information
 
 ## 🚀 Installation
 
-### Option 1: Local Setup
+### Option 1: Docker Setup (Recommended)
+
+1. **Set up environment variables**
+
+   ```bash
+   cp .env.example .env
+   # Edit .env with your configuration
+   ```
+
+2. **Build and start all services**
+
+   ```bash
+   docker-compose up
+   ```
+
+   This will:
+
+   - Start MySQL database
+   - Start Redis cache
+   - Build and start the Node.js application
+   - Run migrations and seeders automatically
+
+### Option 2: Local Setup
 
 1. **Clone the repository**
 
@@ -108,28 +116,6 @@ A complete Express.js backend service for processing employee status information
    # or for development with auto-reload
    npm run dev
    ```
-
-### Option 2: Docker Setup (Recommended)
-
-1. **Set up environment variables**
-
-   ```bash
-   cp .env.example .env
-   # Edit .env with your configuration
-   ```
-
-2. **Build and start all services**
-
-   ```bash
-   docker-compose up
-   ```
-
-   This will:
-
-   - Start MySQL database
-   - Start Redis cache
-   - Build and start the Node.js application
-   - Run migrations and seeders automatically
 
 ## ⚙️ Configuration
 
