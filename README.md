@@ -67,7 +67,7 @@ A complete Express.js backend service for processing employee status information
 
    ```bash
    git clone https://github.com/ProAbdo/Estarta-Coding-Task-Assignment.git
-   cd getempstatus
+   cd Estarta-Coding-Task-Assignment
    ```
 
 2. **Install dependencies**
